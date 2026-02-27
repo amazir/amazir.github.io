@@ -5,12 +5,60 @@
 <html>
 
 	<head>
+	<style>
+		ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+		ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+	}
+
+	ul li {
+	float: left;
+	}
+
+	ul li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+
+	ul li a:hover {
+	background-color: #111111;
+	}
+	
+	ul li a.active {
+    background-color: #111111;
+    pointer-events: none;
+    cursor: default;
+	}
+	
+	body {
+	font-family: "Verdana", Helvetica, Sans-serif;
+	}
+	</style>
 		<meta charset="UTF-8">
-		<title>Exemple HTML</title>
+		<title>Exercice #4</title>
+		<link rel="icon" type="images/png" href="images/a-profile.png">
 	</head>
 	
 	<body style="background-color: #FFFFFF;">
-	
+	<ul>
+	<li><a href="index.html">Acceuil</a></li>
+	  <li><a href="exercice1.html">Exercice #1</a></li>
+      <li><a href="exercice2.html">Exercice #2</a></li>
+      <li><a href="exercice3.html">Exercice #3</a></li>
+	  <li><a href="exercice4.html" class="active">Exercice #4</a></li>
+	  </ul>
+	  <hr>
 		<table border="1">
   <thead>
     <tr>
@@ -87,5 +135,4 @@
 		</tr>
 	</body>
 	</table>
-	<h3><a href="index.html">Retour à l'acceuil</a></h3>
 </html>
