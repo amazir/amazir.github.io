@@ -1,0 +1,142 @@
+<!-- Exemple d'une page HTML de base -->
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<style>
+		.animal-nav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+		.animal-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #333333;
+	}
+
+	.animal-nav li a {
+	display: block;
+	color: white;
+	padding: 8px 16px;
+	text-decoration: none;
+	text-align: center
+	}
+
+	.animal-nav li a:hover {
+	background-color: #111111;
+	color: white;
+	}
+	<!--for the top navigation bar-->
+	.top-nav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+		.top-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333333;
+	}
+
+	.top-nav li {
+	float: left;
+	}
+
+	.top-nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+
+	.top-nav li a:hover {
+	background-color: #111111;
+	}
+	
+	.top-nav li a.active {
+    background-color: #111111;
+    pointer-events: none;
+    cursor: default;
+	}
+	
+	body {
+	font-family: "Verdana", Helvetica, Sans-serif;
+	}
+	
+		.joli {
+	  position: relative;
+	  background-color: #ffc;
+	  padding: 2rem;
+	  text-align: center;
+	  max-width: 700px;
+	}
+
+	.joli::before {
+	  content: "";
+
+	  position: absolute;
+	  z-index: -1;
+	  bottom: 15px;
+	  right: 5px;
+	  width: 100%;
+	  top: 80%;
+	  max-width: 200px;
+
+	  box-shadow: 0px 13px 10px black;
+	  transform: rotate(4deg);
+	}	
+	</style>
+		<meta charset="UTF-8">
+		<title>Exercice #3</title>
+		<link rel="icon" type="images/png" href="images/a-profile.png">
+	</head>
+	
+	<body style="background-color: #FFFFFF;">
+		<ul class="top-nav" id="top">
+		<li><a href="index.html">Acceuil</a></li>
+		<li><a href="exercice1.html">Exercice #1</a></li>
+		<li><a href="exercice2.html">Exercice #2</a></li>
+		<li><a href="exercice3.html" class="active">Exercice #3</a></li>
+		<li><a href="exercice4.html">Exercice #4</a></li>
+	  </ul>
+	  <hr>
+		<h1>Mes animaux préférés</h1>
+		<ul class="animal-nav">
+		  <li><a href="#chien">Chien</a></li>
+		  <li><a href="#chat">Chat</a></li>
+		  <li><a href="#cheval">Cheval</a></li>
+	  </ul>
+	  <hr>
+    <h3 id="chien">Chien</h3>
+    <p>Le chien est un animal fidèle et affectueux. Il aime jouer et accompagner les humains.</p>
+    <a href="https://en.wikipedia.org/wiki/Dog" target="_blank"> Le chien </a>
+	<br>
+    <img src = "images/chien.webp" alt="Chien" width="200"/>
+	<p class="joli">Les chiens ont un odorat environ 10 000 à 100 000 fois plus développé que celui des humains ! Grâce à leur truffe ultra-sensible, ils peuvent détecter certaines maladies, comme le cancer ou le diabète. Pas étonnant qu’on les considère comme de véritables super-héros à quatre pattes !</p>
+	<hr>
+    <h3 id="chat">Chat</h3>
+    <p>Le chat est un animal indépendant et curieux. Il aime dormir et explorer la maison.</p>
+    <a href="https://en.wikipedia.org/wiki/Cat" target="_blank"> Le chat </a>
+    <br>
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg/120px-Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg" alt="Chat" width="200"/>
+    <p class="joli">Les chats ne peuvent pas goûter le sucré ! Leur génétique fait qu’ils ne perçoivent pas les saveurs sucrées comme nous. En revanche, ils ont un sens de l’équilibre exceptionnel grâce à leur fameuse capacité à toujours retomber sur leurs pattes.</p>
+	<hr>
+    <h3 id="cheval">Cheval</h3>
+		<p>Le cheval est un grand animal fort et rapide. Il est souvent utilisé pour l’équitation et le travail à la ferme.</p>
+    <a href="https://en.wikipedia.org/wiki/Horse" target="_blank"> Le cheval </a>
+    <br>
+    <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Nokota_Horses_cropped.jpg/250px-Nokota_Horses_cropped.jpg" alt="Cheval" width="200"/>
+	 <p class="joli">Les chevaux peuvent dormir debout grâce à un système spécial de tendons et de ligaments qui bloque leurs jambes sans effort. Cela leur permet de rester prêts à fuir rapidement en cas de danger. Mais pour un sommeil profond, ils doivent quand même s’allonger !</p> 
+	  <hr>
+	  <h3><a href="#top"><img src = "https://t4.ftcdn.net/jpg/04/16/99/65/360_F_416996517_E7wsR0seNKqLRgfbyqal0Lkk2QxWTj9X.jpg" alt="Top1" width="50"/></a></h3>
+	</body>
+	
+</html>
