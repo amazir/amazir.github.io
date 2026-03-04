@@ -4,38 +4,92 @@
 	<link rel="stylesheet" href="E:\ics3u-ab\projet\css\topnav.css"/>
 	<style type="text/css"> 
 		body {
-		  text-align:center;
+		  margin: 8;
+		}
+
+		.container {
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;   
+		  gap: 35px;
+		  padding: 40px;
+		}
+
+		.poem {
+		  text-align: center;
+		}
+
+		.image img {
+		  width: 400px;   
+		}
+		.boxes-wrapper {
+		  display: flex;          
+		  flex-wrap: wrap;        
+		  gap: 20px;              
+		  justify-content: center; 
+		  margin: 40px 0;        
+		}
+		.boxes {
+		  display: inline-block;
+		  vertical-align: middle;
+		  border-radius: 25px;
+		  border: 2px solid #73AD21;
+		  padding: 20px;
+		  width: 200px;
+		  height: 150px;
+		  margin: 10px;
+		  text-align: center;
 		}
 	</style>
 		<meta charset="UTF-8">
 		<title>Poème</title>
+		<link rel="stylesheet" href="topnav.css" />
 	</head>
 	
 	<body style="background-color: #FFFFFF;">
-		<ul>
+		<ul id="top">
 			  <li><a href="index.html">Acceuil</a><li>
 			  <li><a href="poeme.html" class="active">Poème</a><li>
 			  <li><a href="voyage.html">Voyage</a><li>
-			  <li><a href="biographiehtml">Biographie</a><li>
+			  <li><a href="biographie.html">Biographie</a><li>
 			</ul>
-		<h1><u><a href="https://strommeninc.com/french-poems-10-most-famous/" target="_blank">Demain, dès l’aube</a></u></h1>
-		<h3>par Victor Hugo (1802-1885)</h3>
+		<h1 style=text-align:center><u><a href="https://lesvoixdelapoesie.ca/lire/poemes/il-pleure-dans-mon-coeur" target="_blank">Il pleure dans mon cœur…</a></u></h1>
+		<h3 style=text-align:center>par Paul Verlaine (1844-1896)</h3>
 		<hr>
-		<p>Demain, dès l’aube, à l’heure où blanchit la campagne,</p>
-		<p>Je partirai. Vois-tu, je sais que tu m’attends.</p>
-		<p>J’irai par la forêt, j’irai par la montagne.</p>
-		<p>Je ne puis demeurer loin de toi plus longtemps.</p>
-		<br>
-		<p>Je marcherai les yeux fixés sur mes pensées,</p>
-		<p>Sans rien voir au dehors, sans entendre aucun bruit,</p>
-		<p>Seul, inconnu, le dos courbé, les mains croisées,</p>
-		<p>Triste, et le jour pour moi sera comme la nuit.</p>
-		<br>
-		<p>Je ne regarderai ni l’or du soir qui tombe,</p>
-		<p>Ni les voiles au loin descendant vers Harfleur,</p>
-		<p>Et quand j’arriverai, je mettrai sur ta tombe</p>
-		<p>Un bouquet de houx vert et de bruyère en fleur.</p>
-		<img src="https://www.lafontaine.net/wp-content/uploads/2024/08/demain-des-l-aube-victor-hugo.jpg" alt="poeme" width="550"/>
+		<div class="container">
+
+		  <div class="poem">
+			<p>Il pleure dans mon cœur</p>
+			<p>Comme il pleut sur la ville ;</p>
+			<p>Quelle est cette langueur</p>
+			<p>Qui pénètre mon cœur ?</p>
+			<br>
+			<p>Ô bruit doux de la pluie</p>
+			<p>Par terre et sur les toits !</p>
+			<p>Pour un cœur qui s’ennuie,</p>
+			<p>Ô le chant de la pluie !</p>
+			<br>
+			<p>Il pleure sans raison</p>
+			<p>Dans ce cœur qui s’écœure.</p>
+			<p>Quoi ! nulle trahison ?…</p>
+			<p>Ce deuil est sans raison.</p>
+			<br>
+			<p>C’est bien la pire peine</p>
+			<p>De ne savoir pourquoi</p>
+			<p>Sans amour et sans haine</p>
+			<p>Mon cœur a tant de peine !</p>
+		  </div>
+		  <div class="image">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Paul_Verlaine.jpeg/250px-Paul_Verlaine.jpeg" alt="poeme" width="520">
+		  </div>
+		</div>
+		<hr>
+		<div class="boxes-wrapper">
+			<p class=boxes><b>Connaître l'auteur:</b> Paul Verlaine (1844‑1896), poète majeur du mouvement symboliste et romantique français, connu pour sa musicalité et ses émotions subtiles dans la poésie.</p>
+			<p class=boxes><b>Date et contexte:</b> Écrit dans la seconde moitié du XIXᵉ siècle, ce poème exprime la mélancolie et la tristesse intérieure, caractéristiques de la sensibilité de Verlaine.</p>
+			<p class=boxes><b>Thèmes:</b> Paul Verlaine (1844‑1896), poète majeur du mouvement symboliste et romantique français, connu pour sa musicalité et ses émotions subtiles dans la poésie.</p>
+			<p class=boxes><b>Structure et style:</b> Le poème est composé de quatre quatrains avec des rimes libres et une musicalité douce, adoptant un ton mélancolique et introspectif, où la pluie reflète les émotions et la peine du cœur.</p>
+		</div>
+		<p style=text-align:center><a href="#top" style=text-align:center><img src = "https://cdn-icons-png.flaticon.com/512/2/2486.png" alt="up_arrow" width="50"/></a></p>
 	</body>
-	
 </html>
