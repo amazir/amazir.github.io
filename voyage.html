@@ -2,93 +2,113 @@
 
 	<head>
 	<link rel="stylesheet" href="E:\ics3u-ab\projet\css\topnav.css"/>
-	<style>
-	<!--source pour carousel d'image: https://www.thecoderashok.com/blog/automatic-image-slider-in-html-css-only#google_vignette-->
-			* {
-		  margin: 0;
-		  padding: 0;
-		  box-sizing: border-box;
-		  font-family: sans-serif;
-		}
-		body {
-		  position: relative;
-		  width: 100%;
-		  height: 100vh;
-		  display: flex;
-		  justify-content: center;
-		  align-items: center;
-		}
-		.slider_container {
-		  position: relative;
-		  width: 60%;
-		  height: 40rem;
-		  display: flex;
-		  justify-content: flex-start;
-		  align-items: center;
-		  overflow: hidden;
-		}
-		.slider {
-		  position: relative;
-		  width: 400%;
-		  height: 100%;
-		  display: flex;
-		  flex-direction: row;
-		  align-items: center;
-		  justify-content: space-between;
-		  animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
-		}
-		.slide {
-		  position: relative;
-		  min-width: 100%;
-		  height: 100%;
-		}
-		.slide img {
-		  width: 100%;
-		  height: 100%;
-		}
-		.slide .caption {
-		  position: absolute;
-		  left: 0;
-		  bottom: 5%;
-		  font-size: 5rem;
-		  font-weight: 600;
-		  color: white;
-		  text-transform: capitalize;
-		  background: rgba(0, 0, 0, 0.348);
-		  backdrop-filter: blur(10px);
-		  padding: 1rem 5rem;
-		  border-radius: 0 2rem 2rem 0;
-		}
-		@keyframes sliding {
-		  0% {
-			transform: translateX(0%);
-		  }
-		  20% {
-			transform: translateX(0%);
-		  }
-		  25% {
-			transform: translateX(-100%);
-		  }
-		  45% {
-			transform: translateX(-100%);
-		  }
-		  50% {
-			transform: translateX(-200%);
-		  }
-		  70% {
-			transform: translateX(-200%);
-		  }
-		  75% {
-			transform: translateX(-300%);
-		  }
-		  95% {
-			transform: translateX(-300%);
-		  }
-		  100% {
-			transform: translateX(-400%);
-		  }
-		}
-	</style>
+		<style>
+		<!-- DÉBUT source: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+			* {box-sizing:border-box}
+
+			/* Slideshow container */
+			.slideshow-container {
+			  max-width: 700px;
+			  position: relative;
+			  margin: auto;
+			}
+
+			/* cacher les images */
+			.mySlides {
+			  display: none;
+			}
+
+			/* boutton avant et après */
+			.prev, .next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 50%;
+			  width: auto;
+			  margin-top: -22px;
+			  padding: 16px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 18px;
+			  transition: 0.6s ease;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			}
+
+			/* indiquer sur quelle image on est */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+
+			/* couleur du boutton lorsqu'on "hover" */
+			.prev:hover, .next:hover {
+			  background-color: rgba(0,0,0,0.8);
+			}
+
+			/* texte en bas */
+			.text {
+			  color: #f2f2f2;
+			  text-shadow: 2px 2px 4px #000000;
+			  font-size: 26px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  bottom: 8px;
+			  width: 100%;
+			  text-align: center;
+			}
+
+			/* les numéros en haut à gauche qui indique quelle image */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  text-shadow: 2px 2px 4px #000000;
+			  top: 0;
+			}
+
+			/* pour les bouttons */
+			.dot {
+			  cursor: pointer;
+			  height: 15px;
+			  width: 15px;
+			  margin: 0 2px;
+			  background-color: #bbb;
+			  border-radius: 50%;
+			  display: inline-block;
+			  transition: background-color 0.6s ease;
+			}
+
+			.active, .dot:hover {
+			  background-color: #717171;
+			}
+
+			/* animation */
+			.fade {
+			  animation-name: fade;
+			  animation-duration: 1.5s;
+			}
+
+			@keyframes fade {
+			  from {opacity: .4}
+			  to {opacity: 1}
+			}
+		
+			/* changer le font */
+			body {
+			  font-family: "Trebuchet MS"
+			}
+			
+			/* padding pour le carousel d'image */
+			.sideshift1 {
+			  float: right;
+			  padding-right: 90px;
+			}
+			
+			.wraparound {
+			
+			}
+		</style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -96,36 +116,114 @@
     <link rel="stylesheet" href="topnav.css" />
   </head>
   <body>
-  <ul>
-		<li><a href="index.html">Acceuil</a><li>
-		<li><a href="poeme.html">Poème</a><li>
-		<li><a href="voyage.html" class="active">Voyage</a><li>
-		<li><a href="biographiehtml">Biographie</a><li>
-	</ul>
-	<br>
-    <section class="slider_container">
-      <section class="slider">
-        <div class="slide one">
-          <img src="E:\ics3u-ab\projet\images\varadero.webp" alt="varadero" />
-          <span class="caption"> Playa Varadero </span>
-        </div>
-        <div class="slide two">
-          <img src="E:\ics3u-ab\projet\images\havana.webp" alt="havana" />
-          <span class="caption"> Old Havana </span>
-        </div>
-        <div class="slide three">
-          <img src="E:\ics3u-ab\projet\images\vinales.jpg" alt="vinales" />
-          <span class="caption"> Valle de Vinales </span>
-        </div>
-        <div class="slide four">
-          <img src="E:\ics3u-ab\projet\images\pesquero.jpg" alt="pesquero" />
-          <span class="caption"> Playa Pesquero </span>
-        </div>
-        <div class="slide four">
-          <img src="E:\ics3u-ab\projet\images\plaza.jpg" alt="plaza" />
-          <span class="caption"> Plaza Vieja </span>
-        </div>
-      </section>
-    </section>
+	  <ul>
+			<li><a href="index.html">Acceuil</a></li>
+			<li><a href="poeme.html">Poème</a></li>
+			<li><a href="voyage.html" class="active">Voyage</a></li>
+			<li><a href="biographie.html">Biographie</a></li>
+		</ul>
+		<h1 style=text-align:center;font-size:70px>Un voyage à Cuba!</h1>
+		<p class=sideshift2>Située au cœur des Caraïbes, Cuba est une île fascinante réputée pour son riche patrimoine culturel, ses plages paradisiaques aux eaux turquoise et son ambiance vibrante rythmée par la salsa. Entre les ruelles colorées de La Havane, les vallées verdoyantes de Viñales et les stations balnéaires comme Varadero, le pays offre un mélange unique d’histoire coloniale, de voitures américaines anciennes et de traditions bien préservées. La chaleur de ses habitants et la richesse de sa gastronomie font de Cuba une destination inoubliable.</p>
+		<p><b>Top 5 places à visiter<b></p>
+		<ol>
+			<li>Havana</li>
+			<li>Playa Pesquero</li>
+			<li>Plaza Vieja</li>
+			<li>Playa Varadero</li>
+			<li>Valle de Vinales</li>
+		</ol>	
+			<div class="sideshift1">
+				<div class="big">
+					<div class="slideshow-container">
+
+					  <!-- Images avec text et nombres -->
+					  <div class="mySlides fade">
+						<div class="numbertext">1 / 5</div>
+						<img src="images/havana.jpg" style="width:100%">
+						<div class="text">Havana</div>
+					  </div>
+
+					  <div class="mySlides fade">
+						<div class="numbertext">2 / 5</div>
+						<img src="images/pesquero.jpg" style="width:100%">
+						<div class="text">Playa Pesquero</div>
+					  </div>
+
+					  <div class="mySlides fade">
+						<div class="numbertext">3 / 5</div>
+						<img src="images/plaza.jpg" style="width:100%">
+						<div class="text">Plaza Vieja</div>
+					  </div>
+
+					   <div class="mySlides fade">
+						<div class="numbertext">4 / 5</div>
+						<img src="images/varadero.jpg" style="width:100%">
+						<div class="text">Playa Varadero</div>
+					  </div>
+
+					   <div class="mySlides fade">
+						<div class="numbertext">5 / 5</div>
+						<img src="images/vinales.jpg" style="width:100%">
+						<div class="text">Valle de Vinales</div>
+					  </div>
+
+					  <!-- Bouttons -->
+					  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					</div>
+					<br>
+
+					<!-- Les cercles -->
+					<div class="dots" style="text-align:center">
+					  <span class="dot" onclick="currentSlide(1)"></span>
+					  <span class="dot" onclick="currentSlide(2)"></span>
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					  <span class="dot" onclick="currentSlide(4)"></span>
+					  <span class="dot" onclick="currentSlide(5)"></span>
+					</div>
+				</div>
+			</div>
+		<table border="1">
+		  <thead>
+			<tr>
+			  <th rowspan="2">Mets</th>
+			  <th rowspan="2">Déscription</th>
+			  <th rowspan="1">Photo</th>
+			</tr>
+		  </thead>
+		  <!-- source des mets`: https://www.classicjourneys.com/blog/10-cuban-dishes-to-try-on-your-next-trip-abroad/ -->
+		  <tbody>
+				<tr>
+				  <td rowspan="1">Moros y Cristianos </td>
+				  <td>Un plat cubain traditionnel composé de riz et de haricots noirs cuits ensemble avec des épices. Il est savoureux et souvent servi en accompagnement ou comme plat principal.</td>
+				  <td><img src="images/moros.png" width="40%"/></td>
+				</tr>
+				<!--nouvelle catégorie-->
+				<tr>
+				  <td rowspan="1">Ropa Vieja</td>
+				  <td>Un ragoût de bœuf effiloché mijoté avec des tomates, des poivrons et des oignons. C’est un plat riche et très populaire dans la cuisine cubaine.</td>
+				  <td><img src="images/ropa.png" width="40%"/></td>
+				</tr>
+				<!--nouvelle catégorie-->
+				<tr>
+				  <td rowspan="1">Vaca Frita</td>
+				  <td>Du bœuf effiloché mariné au citron vert puis frit jusqu’à devenir croustillant. Il est généralement servi avec du riz et des bananes plantain.</td>
+				  <td><img src="images/vaca.png" width="40%"/></td>
+				</tr>
+				<!--nouvelle catégorie-->
+				<tr>
+				  <td rowspan="1">Tostones</td>
+				  <td>Des rondelles de banane plantain verte frites deux fois jusqu’à être croustillantes. Elles sont souvent servies comme accompagnement ou en apéritif.</td>
+				  <td><img src="images/tostones.png" width="40%"/></td>
+				</tr>
+				<!--nouvelle catégorie-->
+				<tr>
+				  <td rowspan="1">Arroz con Pollo</td>
+				  <td>Un plat de riz cuit avec du poulet, des légumes et des épices. Il est coloré, parfumé et très répandu en Amérique latine.</td>
+				  <td><img src="images/arroz.png" width="40%"/></td>
+				</tr>
+			</tbody>
+			</table>
+		<script src="scripts/slider.js" defer></script>
   </body>
 </html>
