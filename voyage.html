@@ -2,6 +2,7 @@
 
 	<head>
 	<link rel="stylesheet" href="E:\ics3u-ab\projet\css\topnav.css"/>
+	<link rel="stylesheet" href="E:\ics3u-ab\projet\css\font.css"/>
 		<style>
 		<!-- DÉBUT source: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 			* {box-sizing:border-box}
@@ -105,15 +106,13 @@
 			  padding-right: 90px;
 			}
 			
-			.wraparound {
-			
-			}
 		</style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voyage</title>
     <link rel="stylesheet" href="topnav.css" />
+	<link rel="stylesheet" href="font.css" />
   </head>
   <body>
 	  <ul>
@@ -123,15 +122,6 @@
 			<li><a href="biographie.html">Biographie</a></li>
 		</ul>
 		<h1 style=text-align:center;font-size:70px>Un voyage à Cuba!</h1>
-		<p class=sideshift2>Située au cœur des Caraïbes, Cuba est une île fascinante réputée pour son riche patrimoine culturel, ses plages paradisiaques aux eaux turquoise et son ambiance vibrante rythmée par la salsa. Entre les ruelles colorées de La Havane, les vallées verdoyantes de Viñales et les stations balnéaires comme Varadero, le pays offre un mélange unique d’histoire coloniale, de voitures américaines anciennes et de traditions bien préservées. La chaleur de ses habitants et la richesse de sa gastronomie font de Cuba une destination inoubliable.</p>
-		<p><b>Top 5 places à visiter<b></p>
-		<ol>
-			<li>Havana</li>
-			<li>Playa Pesquero</li>
-			<li>Plaza Vieja</li>
-			<li>Playa Varadero</li>
-			<li>Valle de Vinales</li>
-		</ol>	
 			<div class="sideshift1">
 				<div class="big">
 					<div class="slideshow-container">
@@ -183,47 +173,68 @@
 					</div>
 				</div>
 			</div>
-		<table border="1">
-		  <thead>
-			<tr>
-			  <th rowspan="2">Mets</th>
-			  <th rowspan="2">Déscription</th>
-			  <th rowspan="1">Photo</th>
-			</tr>
-		  </thead>
-		  <!-- source des mets`: https://www.classicjourneys.com/blog/10-cuban-dishes-to-try-on-your-next-trip-abroad/ -->
-		  <tbody>
+			<div style=max-width:1000px;padding-left:35px;text-align:justify;font-size:19px>
+				<p>Située au cœur des Caraïbes, Cuba est une île fascinante réputée pour son riche patrimoine culturel, ses plages paradisiaques aux eaux turquoise et son ambiance vibrante rythmée par la salsa. Entre les ruelles colorées de La Havane, les vallées verdoyantes de Viñales et les stations balnéaires comme Varadero, le pays offre un mélange unique d’histoire coloniale, de voitures américaines anciennes et de traditions bien préservées. La chaleur de ses habitants et la richesse de sa gastronomie font de Cuba une destination inoubliable.</p>
+				<p><b><u>Top 5 places à visiter</u></b></p>
+				<ol>
+					<li><b>Havana:</b> La capitale vibrante de Cuba, où l'architecture coloniale colorée, les voitures vintage et la musique endiablée créent une atmosphère unique en son genre. C'est le cœur culturel et historique de l'île.</li>
+					<hr>
+					<li><b>Playa Pesquero:</b> Une plage paradisiaque aux eaux turquoise cristallines et au sable blanc immaculé, idéale pour se détendre loin de l'agitation des villes. L'un des coins les plus préservés de Cuba.</li>
+					<hr>
+					<li><b>Plaza Vieja</b> L'une des plus belles places coloniales de La Havane, entourée de bâtiments baroques et néoclassiques restaurés, avec cafés, galeries d'art et une atmosphère animée qui ravit les promeneurs.</li>
+					<hr>
+					<li><b>Playa Varadero</b> La station balnéaire la plus célèbre de Cuba, avec ses 20 km de plage de sable fin et ses eaux turquoise, réputée parmi les plus belles plages des Caraïbes. Un incontournable pour les amateurs de soleil et de mer.</li>
+					<hr>
+					<li><b>Valle de Vinales</b> Une vallée spectaculaire classée au patrimoine mondial de l'UNESCO, dominée par d'imposantes formations rocheuses appelées mogotes et de vastes plantations de tabac. Un paysage à couper le souffle au cœur de la nature cubaine.</li>
+				</ol>
+			</div>
+		<br>
+		<br>
+		<hr>
+		<h2 style=text-align:center>Une liste des meilleurs mets a essayer!</h2>
+		<div style=margin-top:30px;margin-left:125px;margin-right:125px>
+			<table border="1" style=text-align:center;max-width:1000px;margin:auto>
+			  <thead>
 				<tr>
-				  <td rowspan="1">Moros y Cristianos </td>
-				  <td>Un plat cubain traditionnel composé de riz et de haricots noirs cuits ensemble avec des épices. Il est savoureux et souvent servi en accompagnement ou comme plat principal.</td>
-				  <td><img src="images/moros.png" width="40%"/></td>
+				  <th rowspan="2">Mets</th>
+				  <th rowspan="1">Déscription</th>
+				  <th rowspan="1">Photo</th>
 				</tr>
-				<!--nouvelle catégorie-->
-				<tr>
-				  <td rowspan="1">Ropa Vieja</td>
-				  <td>Un ragoût de bœuf effiloché mijoté avec des tomates, des poivrons et des oignons. C’est un plat riche et très populaire dans la cuisine cubaine.</td>
-				  <td><img src="images/ropa.png" width="40%"/></td>
-				</tr>
-				<!--nouvelle catégorie-->
-				<tr>
-				  <td rowspan="1">Vaca Frita</td>
-				  <td>Du bœuf effiloché mariné au citron vert puis frit jusqu’à devenir croustillant. Il est généralement servi avec du riz et des bananes plantain.</td>
-				  <td><img src="images/vaca.png" width="40%"/></td>
-				</tr>
-				<!--nouvelle catégorie-->
-				<tr>
-				  <td rowspan="1">Tostones</td>
-				  <td>Des rondelles de banane plantain verte frites deux fois jusqu’à être croustillantes. Elles sont souvent servies comme accompagnement ou en apéritif.</td>
-				  <td><img src="images/tostones.png" width="40%"/></td>
-				</tr>
-				<!--nouvelle catégorie-->
-				<tr>
-				  <td rowspan="1">Arroz con Pollo</td>
-				  <td>Un plat de riz cuit avec du poulet, des légumes et des épices. Il est coloré, parfumé et très répandu en Amérique latine.</td>
-				  <td><img src="images/arroz.png" width="40%"/></td>
-				</tr>
-			</tbody>
-			</table>
+			  </thead>
+			  <!-- source des mets`: https://www.classicjourneys.com/blog/10-cuban-dishes-to-try-on-your-next-trip-abroad/ -->
+			  <tbody>
+					<tr>
+					  <td rowspan="1">Moros y Cristianos </td>
+					  <td>Un plat cubain traditionnel composé de riz et de haricots noirs cuits ensemble avec des épices. Il est savoureux et souvent servi en accompagnement ou comme plat principal.</td>
+					  <td><img src="images/moros.png" width="260"/></td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">Ropa Vieja</td>
+					  <td>Un ragoût de bœuf effiloché mijoté avec des tomates, des poivrons et des oignons. C’est un plat riche et très populaire dans la cuisine cubaine.</td>
+					  <td><img src="images/ropa.png" width="260"/></td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">Vaca Frita</td>
+					  <td>Du bœuf effiloché mariné au citron vert puis frit jusqu’à devenir croustillant. Il est généralement servi avec du riz et des bananes plantain.</td>
+					  <td><img src="images/vaca.png" width="260"/></td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">Tostones</td>
+					  <td>Des rondelles de banane plantain verte frites deux fois jusqu’à être croustillantes. Elles sont souvent servies comme accompagnement ou en apéritif.</td>
+					  <td><img src="images/tostones.png" width="260"/></td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">Arroz con Pollo</td>
+					  <td>Un plat de riz cuit avec du poulet, des légumes et des épices. Il est coloré, parfumé et très répandu en Amérique latine.</td>
+					  <td><img src="images/arroz.png" width="260"/></td>
+					</tr>
+				</tbody>
+				</table>
+			<div>
 		<script src="scripts/slider.js" defer></script>
   </body>
 </html>

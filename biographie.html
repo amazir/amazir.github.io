@@ -2,30 +2,64 @@
 
 	<head>
 		<style>
-		.horinav {
-		  list-style-type: none;
-		  margin: 0;
-		  padding: 0;
-		  width: 200px;
-		  background-color: #f1f1f1;
-		}
+			.fancy {
+			  position: relative;
+			  background-color: #7F8CAA;
+			  padding: 2rem;
+			  text-align: center;
+			  max-width: 400px;
+			  float: right;
+			  margin-right: 460px;
+			  margin-top: 130px;
+			}
 
-		.horinav li a {
-		  display: block;
-		  color: black;
-		  padding: 8px 16px;
-		  text-decoration: none;
-		}
+			.fancy::before {
+			  content: "";
 
-		.horinav li a:hover {
-		  background-color: #555555;
-		  color: white;
-		}
+			  position: relative;
+			  z-index: -1;
+			  bottom: 15px;
+			  right: 5px;
+			  width: 50%;
+			  top: 80%;
+			  max-width: 400px;
+			  margin-right: 460px;
+			  margin-top: 130px;
+
+			  box-shadow: 0px 13px 10px black;
+			  rotate: 0deg;
+			}
+			
+			.manimage {
+			  position: absolute;
+			  margin-left: 570px;
+			  margin-top: 100px;
+			}
+			
+			.vl1 {
+			  border-left: 1px solid #9a9a9a;
+			  height: 540px;
+			  position: absolute;
+			  left: 33%;
+			  margin-left: 0px;
+			  top: 855;
+			}
+			
+			.vl2 {
+			  border-left: 1px solid #9a9a9a;
+			  height: 540px;
+			  position: absolute;
+			  left: 66%;
+			  margin-left: 0px;
+			  top: 855;
+			}
 		</style>
 		<link rel="stylesheet" href="E:\ics3u-ab\projet\css\topnav.css"/>
+		<link rel="stylesheet" href="E:\ics3u-ab\projet\css\font.css"/>
 		<meta charset="UTF-8">
 		<title>Biographie</title>
 		<link rel="stylesheet" href="topnav.css" />
+		<link rel="stylesheet" href="font.css" />
 	</head>
 	
 	<body style="background-color: #FFFFFF;">
@@ -35,19 +69,52 @@
 		  <li><a href="voyage.html">Voyage</a><li>
 		  <li><a href="biographie.html" class="active">Biographie</a><li>
 		</ul>
-		
-		<ul class=horinav>
-		  <li><a href="#intro">Introduction</a><li>
-		  <li><a href="#passions">Mes passions</a><li>
-		  <li><a href="">Mes compétences</a><li>
-		</ul>
-		<h1 id=intro>Introduction: Qui suis-je?</h1>
-		<p>Je m’appelle Amazir, j’ai 16 ans et je suis algérien. Je suis passionné par le soccer, qui me permet de développer mon esprit d’équipe et ma discipline. Je m’intéresse aussi à la technologie et aux projets créatifs, ce qui me pousse à explorer et à comprendre de nouvelles idées. Curieux et motivé, j’aime relever des défis et apprendre de mes expériences pour m’améliorer constamment. Un fait amusant à propos de moi : pendant l’été, je suis allé à l’île de la Réunion avec mon père et nous avons fait toutes les randonnées de l’île, ce qui a été une expérience incroyable. Je suis autonome, rigoureux et soucieux de donner le meilleur de moi-même dans tout ce que j’entreprends.</p>
-		<hr>
-		<h1 id=passions>Mes passions</h1>
-		<p>J’aime le <a href="https://www.fotmob.com/" target="_blank">soccer</a> depuis que j’ai 3 ans, c’est un sport qui m’a toujours passionné et qui m’a appris la discipline et l’esprit d’équipe. Mon équipe préférée est le Real Madrid, et mon joueur préféré est Ronaldo, car j’admire sa passion, son travail acharné et sa détermination à toujours se dépasser sur le terrain. Le soccer fait partie de ma vie et continue de m’inspirer à donner le meilleur de moi-même.</p>
-		<p>Je m’intéresse beaucoup aux <a href="https://ca.buildcores.com/builds/" target="_blank">ordinateurs</a> et à leur fonctionnement. J’ai même construit le mien moi‑même, ce qui m’a permis d’apprendre comment chaque composant interagit et comment optimiser les performances. J’aime toujours trouver des moyens de le rendre plus efficace et plus rapide, que ce soit en améliorant le matériel ou en ajustant les logiciels. Cette passion me pousse à explorer constamment de nouvelles technologies et à développer mes compétences en informatique.</p>
-
+		<div>
+			<img src="images/man.jpg" width="23%" class="manimage"/>
+			<div class="fancy" style=color:white>
+				<p style=font-size:35px>Bonjour! Me voici...</p>
+				<p style=text-align:justify;font-size:23px>Mon pseudo est AlexTech et je suis passionné par la technologie et la programmation. J’aime apprendre comment fonctionnent les ordinateurs, créer des projets avec différents langages de programmation et découvrir de nouveaux outils technologiques. Sur cette page, vous pourrez en apprendre plus sur moi, mes compétences technologiques et quelques-uns de mes liens préférés liés à la programmation et à mes passe-temps.</p>
+			</div>
+		</div>
+		<div class="vl1"></div>
+		<div class="vl2"></div>
+		<div style=margin-top:800px>
+			<hr>
+			<table border="1" style=text-align:center;max-width:1000px;margin:auto;position:absolute>
+				<thead>
+					<tr>
+					  <th rowspan="2">Mets</th>
+					  <th rowspan="1">Déscription</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td rowspan="1">HTML</td>
+					  <td>Expert</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">CSS</td>
+					  <td>Compétent</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">Javascript</td>
+					  <td>Compétent</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">Python</td>
+					  <td>Débutant</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">C++</td>
+					  <td>Compétent</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</body>
 	
 </html>
