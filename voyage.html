@@ -97,9 +97,10 @@
 			  to {opacity: 1}
 			}
 		
-			/* changer le font */
+			/* changer le font et couleur de l'arrière plan*/
 			body {
-			  font-family: "Trebuchet MS"
+			  font-family: "Trebuchet MS";
+			  background-color: #EAEFEF
 			}
 			
 			/* padding pour le carousel d'image */
@@ -108,6 +109,7 @@
 			  padding-right: 90px;
 			}
 			
+			/* navigation vertical */
 			.sidenav {
 			  list-style-type: none;
 			  margin: 0;
@@ -138,7 +140,6 @@
 		</style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voyage</title>
   </head>
   <body><a name="cuba"></a>
@@ -148,13 +149,14 @@
 			<li><a href="voyage.html" class="active">Voyage</a></li>
 			<li><a href="biographie.html">Biographie</a></li>
 		</ul>
-		
+		<!-- barre de navigation vertical -->
 		<ul class="sidenav">
 		  <li><a href="#cuba" class="sideactive">Connaître Cuba</a><li>
 		  <li><a href="#food">Quoi manger</a><li>
 		</ul>
 		
 		<h1 style=text-align:center;font-size:70px>Un voyage à Cuba!</h1>
+			<!-- image carousel -->
 			<div class="sideshift1">
 				<div class="big">
 					<div class="slideshow-container">
@@ -206,6 +208,7 @@
 					</div>
 				</div>
 			</div>
+			<!-- description de Cuba -->
 			<div style=max-width:1000px;padding-left:35px;font-size:19px>
 				<p>Située au cœur des Caraïbes, Cuba est une île fascinante réputée pour son riche patrimoine culturel, ses plages paradisiaques aux eaux turquoise et son ambiance vibrante rythmée par la salsa. Entre les ruelles colorées de La Havane, les vallées verdoyantes de Viñales et les stations balnéaires comme Varadero, le pays offre un mélange unique d’histoire coloniale, de voitures américaines anciennes et de traditions bien préservées. La chaleur de ses habitants et la richesse de sa gastronomie font de Cuba une destination inoubliable.</p>
 				<p><b><u>Top 5 places à visiter</u></b></p>
@@ -230,6 +233,7 @@
 		<br>
 		<br>
 		<hr>
+		<!-- tableau de nourriture -->
 		<h2 style=text-align:center>Une liste des meilleurs mets a essayer!</h2>
 		<div style=margin-top:30px;margin-left:125px;margin-right:125px>
 			<table border="1" style=text-align:center;max-width:1000px;margin:auto>
@@ -279,7 +283,9 @@
 				</tbody>
 			</table>
 		</div>
+		<!-- code js pour le carousel -->
 		<script src="scripts/slider.js" defer></script>
+		<!-- barre de navigation vertical -->
 			<ul class="sidenav">
 				<li><a href="#cuba">Connaître Cuba</a><li>
 				<li><a href="#food" class="sideactive">Quoi manger</a><li>
