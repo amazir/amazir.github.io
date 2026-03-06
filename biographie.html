@@ -10,7 +10,7 @@
 			  text-align: center;
 			  max-width: 400px;
 			  float: right;
-			  margin-right: 26%;
+			  margin-right: 21%;
 			  margin-top: 130px;
 			}
 
@@ -40,29 +40,28 @@
 			
 			.vl1 {
 			  border-left: 1px solid #9a9a9a;
-			  height: 540px;
+			  height: 720px;
 			  position: absolute;
 			  left: 33%;
 			  margin-left: 0px;
-			  top: 855;
+			  top: 925;
 			}
 			
 			.vl2 {
 			  border-left: 1px solid #9a9a9a;
-			  height: 540px;
+			  height: 720px;
 			  position: absolute;
 			  left: 66%;
 			  margin-left: 0px;
-			  top: 855;
+			  top: 925;
 			}
 			
 			.sidenav {
 			  list-style-type: none;
 			  margin: 0;
 			  padding: 0;
-			  width: 200px;
+			  width: 175px;
 			  background-color: #f1f1f1;
-			  position: fixed;
 			  top: 60px;
 			}
 
@@ -78,8 +77,8 @@
 			  color: white;
 			}
 
-			.sidenav li a.active {
-			  background-color: #111111;
+			.sidenav li a.sideactive {
+			  background-color: #7F8CAA;
 			  pointer-events: none;
 			  cursor: default;
 			}
@@ -98,7 +97,7 @@
 		</ul>
 		
 		<ul class="sidenav">
-		  <li><a href="#introduction">Introduction</a><li>
+		  <li><a href="#introduction" class="sideactive">Introduction</a><li>
 		  <li><a href="#information">Informations</a><li>
 		</ul>
 		
@@ -150,7 +149,7 @@
 			</table>
 			
 			<p style="text-align:center;width:21%;margin-left:39%;margin-top:1.6%;font-size:22px;position:absolute;"><b><u>Mes liens préférés (technologie et passe-temps)</b></u></p>
-			<table border="1" style="text-align:center;width:21%;margin-left:39%;margin-top:6.7%;font-size:22px;position:absolute;">
+			<table border="1" style="text-align:center;width:21%;margin-left:39%;margin-top:7.7%;font-size:22px;position:absolute;">
 				<thead>
 					<tr>
 					  <th rowspan="2">Lien</th>
@@ -159,27 +158,27 @@
 				</thead>
 				<tbody>
 					<tr>
-					  <td rowspan="1"><a href="https://www.youtube.com/">Youtube</a></td>
+					  <td rowspan="1"><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" width="100%"/></a></td>
 					  <td>Pour regarder des tutoriels de programmation</td>
 					</tr>
 					<!--nouvelle catégorie-->
 					<tr>
-					  <td rowspan="1"><a href="https://www.khanacademy.org/">Khan Academy</a></td>
+					  <td rowspan="1"><a href="https://www.khanacademy.org/" target="_blank"><img src="images/khan.png" width="100%"/></a></td>
 					  <td>Pour apprendre la programmation et les mathématiques</td>
 					</tr>
 					<!--nouvelle catégorie-->
 					<tr>
-					  <td rowspan="1"><a href="https://github.com/">Github</a></td>
+					  <td rowspan="1"><a href="https://github.com/" target="_blank"><img src="images/github.png" width="100%"/></a></td>
 					  <td>Pour voir des projets de programmation</td>
 					</tr>
 					<!--nouvelle catégorie-->
 					<tr>
-					  <td rowspan="1"><a href="https://www.w3schools.com/">w3schools</a></td>
+					  <td rowspan="1"><a href="https://www.w3schools.com/" target="_blank"><img src="images/w3.png" width="100%"/></a></td>
 					  <td>Pour trouver des tutoriels de codage</td>
 					</tr>
 					<!--nouvelle catégorie-->
 					<tr>
-					  <td rowspan="1"><a href="https://stackoverflow.com/questions">Stack Overflow</a></td>
+					  <td rowspan="1"><a href="https://stackoverflow.com/questions" target="_blank"><img src="images/stack.png" width="100%"/></a></td>
 					  <td>Pour trouver des réponses aux problèmes de code</td>
 					</tr>
 				</tbody>
@@ -209,6 +208,12 @@
 					</tr>
 				</tbody>
 			</table>
+		</div>
+		<div style=margin-top:570px>
+			<ul class="sidenav">
+			  <li><a href="#introduction">Introduction</a><li>
+			  <li><a href="#information" class="sideactive">Informations</a><li>
+			</ul>
 		</div>
 	</body>
 	
