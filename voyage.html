@@ -112,9 +112,8 @@
 			  list-style-type: none;
 			  margin: 0;
 			  padding: 0;
-			  width: 200px;
+			  width: 175px;
 			  background-color: #f1f1f1;
-			  position: fixed;
 			  top: 60px;
 			}
 
@@ -130,8 +129,8 @@
 			  color: white;
 			}
 
-			.sidenav li a.active {
-			  background-color: #111111;
+			.sidenav li a.sideactive {
+			  background-color: #7F8CAA;
 			  pointer-events: none;
 			  cursor: default;
 			}
@@ -151,7 +150,7 @@
 		</ul>
 		
 		<ul class="sidenav">
-		  <li><a href="#cuba">Connaître Cuba</a><li>
+		  <li><a href="#cuba" class="sideactive">Connaître Cuba</a><li>
 		  <li><a href="#food">Quoi manger</a><li>
 		</ul>
 		
@@ -207,7 +206,7 @@
 					</div>
 				</div>
 			</div>
-			<div style=max-width:1000px;padding-left:35px;text-align:justify;font-size:19px>
+			<div style=max-width:1000px;padding-left:35px;font-size:19px>
 				<p>Située au cœur des Caraïbes, Cuba est une île fascinante réputée pour son riche patrimoine culturel, ses plages paradisiaques aux eaux turquoise et son ambiance vibrante rythmée par la salsa. Entre les ruelles colorées de La Havane, les vallées verdoyantes de Viñales et les stations balnéaires comme Varadero, le pays offre un mélange unique d’histoire coloniale, de voitures américaines anciennes et de traditions bien préservées. La chaleur de ses habitants et la richesse de sa gastronomie font de Cuba une destination inoubliable.</p>
 				<p><b><u>Top 5 places à visiter</u></b></p>
 				<ol>
@@ -267,9 +266,13 @@
 					  <td><img src="images/arroz.png" width="260"/></td>
 					</tr>
 				</tbody>
-				</table>
-			<div>
+			</table>
+		</div>
 		<script src="scripts/slider.js" defer></script>
+			<ul class="sidenav">
+				<li><a href="#cuba">Connaître Cuba</a><li>
+				<li><a href="#food" class="sideactive">Quoi manger</a><li>
+			</ul>
   </body>
 
 </html>
