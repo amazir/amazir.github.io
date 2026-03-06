@@ -3,6 +3,7 @@
 	<head>
 	<link rel="stylesheet" href="css/topnav.css" />
 	<link rel="stylesheet" href="css/font.css" />
+	<link rel="stylesheet" href="css/stickynav.css" />
 		<style>
 		<!-- DÉBUT source: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
 			* {box-sizing:border-box}
@@ -12,6 +13,7 @@
 			  max-width: 700px;
 			  position: relative;
 			  margin: auto;
+			  margin-left: 15px;
 			}
 
 			/* cacher les images */
@@ -106,19 +108,53 @@
 			  padding-right: 90px;
 			}
 			
+			.sidenav {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  width: 200px;
+			  background-color: #f1f1f1;
+			  position: fixed;
+			  top: 60px;
+			}
+
+			.sidenav li a {
+			  display: block;
+			  color: black;
+			  padding: 8px 16px;
+			  text-decoration: none;
+			}
+
+			.sidenav li a:hover {
+			  background-color: #555555;
+			  color: white;
+			}
+
+			.sidenav li a.active {
+			  background-color: #111111;
+			  pointer-events: none;
+			  cursor: default;
+			}
+			
 		</style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Voyage</title>
   </head>
-  <body>
+  <body><a name="cuba"></a>
 	  <ul>
 			<li><a href="index.html">Acceuil</a></li>
 			<li><a href="poeme.html">Poème</a></li>
 			<li><a href="voyage.html" class="active">Voyage</a></li>
 			<li><a href="biographie.html">Biographie</a></li>
 		</ul>
+		
+		<ul class="sidenav">
+		  <li><a href="#cuba">Connaître Cuba</a><li>
+		  <li><a href="#food">Quoi manger</a><li>
+		</ul>
+		
 		<h1 style=text-align:center;font-size:70px>Un voyage à Cuba!</h1>
 			<div class="sideshift1">
 				<div class="big">
@@ -198,7 +234,7 @@
 				  <th rowspan="1">Déscription</th>
 				  <th rowspan="1">Photo</th>
 				</tr>
-			  </thead>
+			  </thead><a name="food"></a>
 			  <!-- source des mets`: https://www.classicjourneys.com/blog/10-cuban-dishes-to-try-on-your-next-trip-abroad/ -->
 			  <tbody>
 					<tr>
