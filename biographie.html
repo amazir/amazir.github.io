@@ -3,6 +3,7 @@
 	<head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
+			/* belle boite */
 			.fancy {
 			  position: relative;
 			  background-color: #7F8CAA;
@@ -13,7 +14,8 @@
 			  margin-right: 21%;
 			  margin-top: 130px;
 			}
-
+			
+			/* l'ombre et position de la boite */
 			.fancy::before {
 			  content: "";
 
@@ -31,6 +33,7 @@
 			  rotate: 0deg;
 			}
 			
+			/* iamge de l'homme */
 			.manimage {
 			  position: absolute;
 			  float: left;
@@ -38,6 +41,7 @@
 			  margin-top: 5%;
 			}
 			
+			/* barres verticales */
 			.vl1 {
 			  border-left: 1px solid #9a9a9a;
 			  height: 720px;
@@ -56,6 +60,7 @@
 			  top: 925;
 			}
 			
+			/* navigation vertical */
 			.sidenav {
 			  list-style-type: none;
 			  margin: 0;
@@ -82,25 +87,31 @@
 			  pointer-events: none;
 			  cursor: default;
 			}
+			
+			/* séparation de la couleur au milieu de la page */
+			.bottom{
+			  height:110vh;
+			  background:#FFFFFF;
+			}
 		</style>
 		<link rel="stylesheet" href="css/topnav.css" />
 		<link rel="stylesheet" href="css/font.css" />
 		<meta charset="UTF-8">
 		<title>Biographie</title>
 	</head>
-	<body style="background-color: #FFFFFF;"><a name="introduction"></a>
+	<body style="background-color: #EAEFEF;"><a name="introduction"></a>
 		<ul>
 		  <li><a href="index.html">Acceuil</a><li>
 		  <li><a href="poeme.html">Poème</a><li>
 		  <li><a href="voyage.html">Voyage</a><li>
 		  <li><a href="biographie.html" class="active">Biographie</a><li>
 		</ul>
-		
+		<!-- barre de navigation vertical -->
 		<ul class="sidenav">
 		  <li><a href="#introduction" class="sideactive">Introduction</a><li>
 		  <li><a href="#information">Informations</a><li>
 		</ul>
-		
+		<!-- image de l'homme et le texte en boite -->
 		<div>
 			<img src="images/man.jpg" width="23%" class="manimage"/>
 			<!-- source de l'image https://www.istockphoto.com/search/more-like-this/1550540247?assettype=image%2Cfilm&phrase=man%20thinking%20face -->
@@ -109,112 +120,116 @@
 				<p style=text-align:justify;font-size:23px>Mon pseudo est AlexTech et je suis passionné par la technologie et la programmation. J’aime apprendre comment fonctionnent les ordinateurs, créer des projets avec différents langages de programmation et découvrir de nouveaux outils technologiques. Sur cette page, vous pourrez en apprendre plus sur moi, mes compétences technologiques et quelques-uns de mes liens préférés liés à la programmation et à mes passe-temps.</p>
 			</div>
 		</div>
+		<!-- barres verticales -->
 		<div class="vl1"></div>
 		<div class="vl2"></div>
-		<div style=margin-top:800px><a name="information"></a>
-			<hr>
-			<p style="text-align:center;width:21%;margin-left:5%;font-size:22px;position:absolute"><b><u>Mes compétences téchnologiques</b></u></p>
-			<table border="1" style="text-align:center;width:21%;margin-left:5%;margin-top:7%;font-size:22px;position:absolute">
-				<thead>
-					<tr>
-					  <th rowspan="2">Langage</th>
-					  <th rowspan="1">Niveau</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-					  <td rowspan="1">HTML</td>
-					  <td>Expert</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1">CSS</td>
-					  <td>Compétent</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1">Javascript</td>
-					  <td>Compétent</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1">Python</td>
-					  <td>Débutant</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1">C++</td>
-					  <td>Compétent</td>
-					</tr>
-				</tbody>
-			</table>
-			
-			<p style="text-align:center;width:21%;margin-left:39%;margin-top:1.6%;font-size:22px;position:absolute;"><b><u>Mes liens préférés (technologie et passe-temps)</b></u></p>
-			<table border="1" style="text-align:center;width:21%;margin-left:39%;margin-top:7.7%;font-size:22px;position:absolute;">
-				<thead>
-					<tr>
-					  <th rowspan="2">Lien</th>
-					  <th rowspan="1">Pourquoi?</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-					  <td rowspan="1"><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" width="100%"/></a></td>
-					  <td>Pour regarder des tutoriels de programmation</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1"><a href="https://www.khanacademy.org/" target="_blank"><img src="images/khan.png" width="100%"/></a></td>
-					  <td>Pour apprendre la programmation et les mathématiques</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1"><a href="https://github.com/" target="_blank"><img src="images/github.png" width="100%"/></a></td>
-					  <td>Pour voir des projets de programmation</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1"><a href="https://www.w3schools.com/" target="_blank"><img src="images/w3.png" width="100%"/></a></td>
-					  <td>Pour trouver des tutoriels de codage</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1"><a href="https://stackoverflow.com/questions" target="_blank"><img src="images/stack.png" width="100%"/></a></td>
-					  <td>Pour trouver des réponses aux problèmes de code</td>
-					</tr>
-				</tbody>
-			</table>
-			
-			<p style="text-align:center;width:21%;margin-left:73%;font-size:22px;position:absolute"><b><u>Autres informations importantes (non privées)</b></u></p>
-			<table border="1" style="text-align:center;width:21%;margin-left:73%;margin-top:6%;font-size:22px;position:absolute">
-				<tbody>
-					<tr>
-					  <td rowspan="1">Intérêts</td>
-					  <td>Programmation, technologie, jeux vidéo et apprentissage de nouvelles compétences numériques</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1">Objectif</td>
-					  <td>Améliorer mes compétences en programmation et créer des projets technologiques intéressants</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1">Langues parlées</td>
-					  <td>Français et anglais</td>
-					</tr>
-					<!--nouvelle catégorie-->
-					<tr>
-					  <td rowspan="1">Projets préférés</td>
-					  <td>Petits jeux, pages web et expériences avec du code</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div style=margin-top:570px>
-			<ul class="sidenav">
-			  <li><a href="#introduction">Introduction</a><li>
-			  <li><a href="#information" class="sideactive">Informations</a><li>
-			</ul>
+		<div class="bottom">
+			<div style=margin-top:800px><a name="information"></a>
+				<hr>
+				<p style="text-align:center;width:21%;margin-left:5%;font-size:22px;position:absolute"><b><u>Mes compétences téchnologiques</b></u></p>
+				<table border="1" style="text-align:center;width:21%;margin-left:5%;margin-top:7%;font-size:22px;position:absolute">
+					<thead>
+						<tr>
+						  <th rowspan="2">Langage</th>
+						  <th rowspan="1">Niveau</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						  <td rowspan="1">HTML</td>
+						  <td>Expert</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1">CSS</td>
+						  <td>Compétent</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1">Javascript</td>
+						  <td>Compétent</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1">Python</td>
+						  <td>Débutant</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1">C++</td>
+						  <td>Compétent</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- nouveau tableau -->
+				<p style="text-align:center;width:21%;margin-left:39%;margin-top:1.6%;font-size:22px;position:absolute;"><b><u>Mes liens préférés (technologie et passe-temps)</b></u></p>
+				<table border="1" style="text-align:center;width:21%;margin-left:39%;margin-top:7.7%;font-size:22px;position:absolute;">
+					<thead>
+						<tr>
+						  <th rowspan="2">Lien</th>
+						  <th rowspan="1">Pourquoi?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						  <td rowspan="1"><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" width="100%"/></a></td>
+						  <td>Pour regarder des tutoriels de programmation</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1"><a href="https://www.khanacademy.org/" target="_blank"><img src="images/khan.png" width="100%"/></a></td>
+						  <td>Pour apprendre la programmation et les mathématiques</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1"><a href="https://github.com/" target="_blank"><img src="images/github.png" width="100%"/></a></td>
+						  <td>Pour voir des projets de programmation</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1"><a href="https://www.w3schools.com/" target="_blank"><img src="images/w3.png" width="100%"/></a></td>
+						  <td>Pour trouver des tutoriels de codage</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1"><a href="https://stackoverflow.com/questions" target="_blank"><img src="images/stack.png" width="100%"/></a></td>
+						  <td>Pour trouver des réponses aux problèmes de code</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- nouveau tableau -->
+				<p style="text-align:center;width:21%;margin-left:73%;font-size:22px;position:absolute"><b><u>Autres informations importantes (non privées)</b></u></p>
+				<table border="1" style="text-align:center;width:21%;margin-left:73%;margin-top:6%;font-size:22px;position:absolute">
+					<tbody>
+						<tr>
+						  <td rowspan="1">Intérêts</td>
+						  <td>Programmation, technologie, jeux vidéo et apprentissage de nouvelles compétences numériques</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1">Objectif</td>
+						  <td>Améliorer mes compétences en programmation et créer des projets technologiques intéressants</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1">Langues parlées</td>
+						  <td>Français et anglais</td>
+						</tr>
+						<!--nouvelle catégorie-->
+						<tr>
+						  <td rowspan="1">Projets préférés</td>
+						  <td>Petits jeux, pages web et expériences avec du code</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- navigation en bas de la page -->
+			<div style=margin-top:570px>
+				<ul class="sidenav">
+				  <li><a href="#introduction">Introduction</a><li>
+				  <li><a href="#information" class="sideactive">Informations</a><li>
+				</ul>
+			</div>
 		</div>
 	</body>
 	
