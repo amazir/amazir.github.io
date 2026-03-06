@@ -1,6 +1,7 @@
 <html>
 
 	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			.fancy {
 			  position: relative;
@@ -9,7 +10,7 @@
 			  text-align: center;
 			  max-width: 400px;
 			  float: right;
-			  margin-right: 460px;
+			  margin-right: 26%;
 			  margin-top: 130px;
 			}
 
@@ -23,7 +24,7 @@
 			  width: 50%;
 			  top: 80%;
 			  max-width: 400px;
-			  margin-right: 460px;
+			  margin-right: 26%;
 			  margin-top: 130px;
 
 			  box-shadow: 0px 13px 10px black;
@@ -32,8 +33,9 @@
 			
 			.manimage {
 			  position: absolute;
-			  margin-left: 570px;
-			  margin-top: 100px;
+			  float: left;
+			  margin-left: 27%;
+			  margin-top: 5%;
 			}
 			
 			.vl1 {
@@ -53,20 +55,53 @@
 			  margin-left: 0px;
 			  top: 855;
 			}
+			
+			.sidenav {
+			  list-style-type: none;
+			  margin: 0;
+			  padding: 0;
+			  width: 200px;
+			  background-color: #f1f1f1;
+			  position: fixed;
+			  top: 60px;
+			}
+
+			.sidenav li a {
+			  display: block;
+			  color: black;
+			  padding: 8px 16px;
+			  text-decoration: none;
+			}
+
+			.sidenav li a:hover {
+			  background-color: #555555;
+			  color: white;
+			}
+
+			.sidenav li a.active {
+			  background-color: #111111;
+			  pointer-events: none;
+			  cursor: default;
+			}
 		</style>
 		<link rel="stylesheet" href="css/topnav.css" />
 		<link rel="stylesheet" href="css/font.css" />
 		<meta charset="UTF-8">
 		<title>Biographie</title>
 	</head>
-	
-	<body style="background-color: #FFFFFF;">
+	<body style="background-color: #FFFFFF;"><a name="introduction"></a>
 		<ul>
 		  <li><a href="index.html">Acceuil</a><li>
 		  <li><a href="poeme.html">Poème</a><li>
 		  <li><a href="voyage.html">Voyage</a><li>
 		  <li><a href="biographie.html" class="active">Biographie</a><li>
 		</ul>
+		
+		<ul class="sidenav">
+		  <li><a href="#introduction">Introduction</a><li>
+		  <li><a href="#information">Informations</a><li>
+		</ul>
+		
 		<div>
 			<img src="images/man.jpg" width="23%" class="manimage"/>
 			<div class="fancy" style=color:white>
@@ -76,13 +111,14 @@
 		</div>
 		<div class="vl1"></div>
 		<div class="vl2"></div>
-		<div style=margin-top:800px>
+		<div style=margin-top:800px><a name="information"></a>
 			<hr>
-			<table border="1" style=text-align:center;max-width:1000px;margin:auto;position:absolute>
+			<p style="text-align:center;width:21%;margin-left:5%;font-size:22px;position:absolute"><b><u>Mes compétences téchnologiques</b></u></p>
+			<table border="1" style="text-align:center;width:21%;margin-left:5%;margin-top:7%;font-size:22px;position:absolute">
 				<thead>
 					<tr>
-					  <th rowspan="2">Mets</th>
-					  <th rowspan="1">Déscription</th>
+					  <th rowspan="2">Langage</th>
+					  <th rowspan="1">Niveau</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -112,9 +148,69 @@
 					</tr>
 				</tbody>
 			</table>
+			
+			<p style="text-align:center;width:21%;margin-left:39%;margin-top:1.6%;font-size:22px;position:absolute;"><b><u>Mes liens préférés (technologie et passe-temps)</b></u></p>
+			<table border="1" style="text-align:center;width:21%;margin-left:39%;margin-top:6.7%;font-size:22px;position:absolute;">
+				<thead>
+					<tr>
+					  <th rowspan="2">Lien</th>
+					  <th rowspan="1">Pourquoi?</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td rowspan="1"><a href="https://www.youtube.com/">Youtube</a></td>
+					  <td>Pour regarder des tutoriels de programmation</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1"><a href="https://www.khanacademy.org/">Khan Academy</a></td>
+					  <td>Pour apprendre la programmation et les mathématiques</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1"><a href="https://github.com/">Github</a></td>
+					  <td>Pour voir des projets de programmation</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1"><a href="https://www.w3schools.com/">w3schools</a></td>
+					  <td>Pour trouver des tutoriels de codage</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1"><a href="https://stackoverflow.com/questions">Stack Overflow</a></td>
+					  <td>Pour trouver des réponses aux problèmes de code</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<p style="text-align:center;width:21%;margin-left:73%;font-size:22px;position:absolute"><b><u>Autres informations importantes (non privées)</b></u></p>
+			<table border="1" style="text-align:center;width:21%;margin-left:73%;margin-top:6%;font-size:22px;position:absolute">
+				<tbody>
+					<tr>
+					  <td rowspan="1">Intérêts</td>
+					  <td>Programmation, technologie, jeux vidéo et apprentissage de nouvelles compétences numériques</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">Objectif</td>
+					  <td>Améliorer mes compétences en programmation et créer des projets technologiques intéressants</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">Langues parlées</td>
+					  <td>Français et anglais</td>
+					</tr>
+					<!--nouvelle catégorie-->
+					<tr>
+					  <td rowspan="1">Projets préférés</td>
+					  <td>Petits jeux, pages web et expériences avec du code</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</body>
 	
 
 </html>
-
